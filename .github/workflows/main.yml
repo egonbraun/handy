@@ -6,10 +6,10 @@ jobs:
     name: pipeline
     steps:
     - name: lint
-      uses: egonbraun/python-ci-action
+      uses: egonbraun/python-ci-action@main
       with:
         disable_test: "true"
     - name: test
-      uses: egonbraun/python-ci-action
+      uses: egonbraun/python-ci-action@main
       with:
         disable_lint: "true"
