@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    name: pipeline
+    steps:
+    - name: lint
+      uses: egonbraun/python-ci-action
+      with:
+        disable_test: "true"
+    - name: test
+        uses: egonbraun/python-ci-action
+        with:
+          disable_lint: "true"
