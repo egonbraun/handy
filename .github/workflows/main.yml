@@ -1,7 +1,7 @@
 on: [push]
 
 jobs:
-  pipeline:
+  ci:
     runs-on: ubuntu-latest
     name: pipeline
     steps:
@@ -10,6 +10,6 @@ jobs:
       with:
         disable_test: "true"
     - name: test
-        uses: egonbraun/python-ci-action
-        with:
-          disable_lint: "true"
+      uses: egonbraun/python-ci-action
+      with:
+        disable_lint: "true"
