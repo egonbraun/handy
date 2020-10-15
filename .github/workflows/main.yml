@@ -3,13 +3,15 @@ on: [push]
 jobs:
   ci:
     runs-on: ubuntu-latest
-    name: pipeline
+    name: Pipeline
     steps:
-    - name: lint
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Lint
       uses: egonbraun/python-ci-action@main
       with:
         disable_test: "true"
-    - name: test
+    - name: Test
       uses: egonbraun/python-ci-action@main
       with:
         disable_lint: "true"
