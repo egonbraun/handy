@@ -8,10 +8,4 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Lint
-      uses: egonbraun/python-ci-action@main
-      with:
-        disable_test: "true"
-    - name: Test
-      uses: egonbraun/python-ci-action@main
-      with:
-        disable_lint: "true"
+      uses: egonbraun/python-lint-action@main
