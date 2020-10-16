@@ -9,3 +9,5 @@ jobs:
       uses: actions/checkout@v2
     - name: Lint
       uses: egonbraun/python-lint-action@main
+    - name: Test
+      uses: egonbraun/python-unittest-action@main
