@@ -10,5 +10,5 @@ class EdgeTestCase(unittest.TestCase):
         self.assertEqual(DEFAULT_PASSWORD_LENGTH, 25)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

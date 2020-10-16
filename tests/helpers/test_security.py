@@ -15,5 +15,5 @@ class EnvironmentTestCase(unittest.TestCase):
         self.assertEqual(len(generate_password(1000)), 1000)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
